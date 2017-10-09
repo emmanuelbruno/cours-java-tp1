@@ -2,6 +2,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <!-- Le nom court du projet a utiliser pour github -->
+        <projectShortName>cours-java-tp1</projectShortName>
+        <github.account>emmanuelbruno</github.account>
+        <!-- utln login for nexus (maven and docker ) repository on lsis -->
+        <lsisnexus.login>emmanuel.bruno@univ-tln.fr</lsisnexus.login>
+        <!-- the default Main class -->
+        <app.main.class>fr.univtln.bruno.coursjava.tp.tp1.Test</app.main.class>
+    </properties>
+
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-dptinfoutln-public</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/dptinfoutln/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-dptinfoutln-public</id>
+            <name>bintray-plugins</name>
+            <url>https://dl.bintray.com/dptinfoutln/public</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    
     <parent>
         <groupId>fr.univtln.bruno.pom</groupId>
         <artifactId>common-pom</artifactId>
