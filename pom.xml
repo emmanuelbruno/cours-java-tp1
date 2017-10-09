@@ -37,7 +37,7 @@
     <parent>
         <groupId>fr.univtln.bruno.pom</groupId>
         <artifactId>common-pom</artifactId>
-        <version>0.7.20</version>
+        <version>0.7.30-dev-174</version>
     </parent>
 
     <groupId>fr.univtln.bruno.coursjava</groupId>
